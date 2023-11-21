@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetInfo</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/login.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+
+    <!-- JAVA SCRIPT -->
+    <script type="module" src="./src/scripts/index.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="slogan">
+            <h2>PetInfo</h2>
+            <h2> <span style="color: var(--brand100);">Amor</span> e <span
+                    style="color: var(--brand100);">carinho</span> por meio do conhecimento</h2>
+            <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+            <div class="div__imgs">
+                <img class="img1" src="./src/img/Rectangle 2.png" alt="cat">
+                <img class="img2" src="./src/img/Rectangle 3.png" alt="cat">
+                <img class="img3" src="./src/img/Rectangle 5.png" alt="cat">
+                <img class="img4" src="./src/img/Rectangle 4.png" alt="cat">
+            </div>
+        </div>
+        <div class="login">
+            <form>
+                <h3>Login</h3>
+
+                <div class="email divInput">
+                    <label for="email">Email</label>
+                    <input type="email" class="userEmail" id="email" placeholder="Digite seu email">
+                </div>
+
+                <div class="password divInput">
+                    <label for="password">Senha</label>
+                    <input type="password" class="userPassword" id="password" placeholder="Digite sua senha">
+                </div>
+
+                <button class="signIn redirect_blue__button">Acessar</button>
+
+                <div class="newUser">
+                    <p><strong>Ainda não possui conta?</strong></p>
+                    <p>Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+                </div>
+            </form>
+            <button class="create redirect__button">Cadastrar</button>
+        </div>
+    </main>
+</body>
+
+</html>

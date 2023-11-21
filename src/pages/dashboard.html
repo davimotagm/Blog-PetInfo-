@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetInfo</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+
+    <!-- JAVA SCRIPT -->
+    <script src="../scripts/dashboard.js" defer></script>
+    <script src="../scripts/modal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="divHeader">
+            <h2>Petinfo</h2>
+            <div class="menu__header">
+                <button class="createPost confirm__button">Criar Publicação</button>
+                <img class="img__header" src="" alt="">
+
+                <div class="LogOut hidden">
+                    <div class="userName">
+                        <p><strong class="name_LogOut"></strong></p>
+                    </div>
+                    <button class="LogOut__button"> <img src="../img/opcao-de-sair.png" alt="">Sair da conta</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="split">
+        <div>
+            <h3>Feed</h3>
+        </div>
+    </div>
+
+    <div class="container">
+
+    </div>
+    <dialog class="modal__controller">
+        <div class="modal">
+            <div class="headerModal">
+                <h3>Criando novo post</h3>
+                <button class="closeModal">X</button>
+            </div>
+            <div class="title__div divInput">
+                <label for="title">Título do post</label>
+                <input type="text" placeholder="Digite o título aqui..." id="title" class="titlePost">
+            </div>
+            <div class="content__div divInput">
+                <label for="content">Conteúdo do post</label>
+                <textarea id="content" class="contentPost" placeholder="Desenvolva o conteúdo do post aqui..." cols="30"
+                    rows="10"></textarea>
+            </div>
+            <div class="buttons">
+                <button class="cancel">Cancelar</button>
+                <button class="publish confirm__button">Publicar</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal__controller modalAccessPub">
+        <div class="modal">
+            <div class="headerModal">
+                <div class="profileInfo">
+                    <img class="userPost" src="" alt="">
+                    <p><strong class="nameUserPost"></strong></p>
+                </div>
+                <button class="closeModal closeModalAccessPub">X</button>
+            </div>
+            <h2 class="titleUserPost"></h2>
+            <p class="contentUserPost"></p>
+        </div>
+    </dialog>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.modal {
+    border: 0;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.headerModal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content__div, .title__div {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+}
+

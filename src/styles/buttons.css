@@ -3,25 +3,46 @@ button {
   border-radius: 0.3rem;
   padding: 0.6rem;
   cursor: pointer;
+  font-weight: 600;
 }
 
-.redirect-edit__button {
+.redirect__button {
   border: 1px solid var(--gray600);
-  background-color: var(--gray900);
+  display: flex;
+  height: 32px;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   color: var(--gray100);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
-.redirect-edit__button:hover {
+.redirect__button:hover {
   background-color: var(--gray800);
 }
 
-.close-cancel__button {
-  background-color: var(--gray600);
-  color: var(--gray400);
+.redirect_blue__button {
+  background-color: var(--brand100);
+  border: 1px solid var(--gray600);
+  display: flex;
+  height: 32px;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--gray900);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
-.close-cancel__button:hover {
-  color: var(--gray300);
+.redirect_blue__button:hover {
+  background-color: var(--brand200);
 }
 
 .confirm__button {
@@ -31,6 +52,41 @@ button {
 
 .confirm__button:hover {
   background-color: var(--brand200);
+}
+
+.edit__button {
+  border-radius: 4px;
+  border: 1px solid var(--gray600);
+  background-color: inherit;
+}
+
+.edit__button:hover {
+  background-color: var(--gray800);
+}
+
+.delete__button {
+  border-radius: 4px;
+  border: 1px solid var(--gray700);
+  background-color: var(--gray700);
+  color: var(--gray400);
+}
+
+.delete__button:hover {
+  border: 1px solid var(--gray600);
+  background: var(--gray600);
+  color: var(--gray300);
+}
+
+.accessPost {
+  max-width: fit-content;
+  background-color: transparent;
+  padding: 0;
+  color: var(--brand100);
+}
+
+.accessPost:hover { 
+  color: var(--brand200);
+  text-decoration: underline;
 }
 
 .alert__button {
