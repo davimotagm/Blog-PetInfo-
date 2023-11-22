@@ -10,8 +10,23 @@
     padding: 1rem;
 }
 
+.modalDelete {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+}
+
+.alert_delete {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
 .headerModal {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }

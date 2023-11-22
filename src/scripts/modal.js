@@ -1,3 +1,5 @@
+import { showPosts } from "./dashboard.js"
+
 const button__createPoste = document.querySelector('.createPost');
 const modal_open = document.querySelector('.modal__controller')
 const modal_close = document.querySelector('.closeModal')
@@ -30,6 +32,7 @@ const createPost = () => {
                         modal_open.close();
                         titlePost.value = "";
                         contentPost.value = ""
+                        showPosts()
                     } else {
                         console.error('Erro ao criar post:', post.status, post.statusText);
                     }
@@ -54,6 +57,8 @@ const closeModal = () => {
 
 createPost();
 closeModal();
+showPosts();
+
 
 // const accessPost = async () => {
 //     try {

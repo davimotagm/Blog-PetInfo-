@@ -127,7 +127,7 @@ body {
     gap: 0.8rem;
 }
 
-.userPost {
+.userPost, .userPostModal {
     width: 32px;
     height: 32px;
     flex-shrink: 0;

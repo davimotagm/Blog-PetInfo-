@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetInfo</title>
+    <link rel="icon" href="../img/imgIcon.png" type="image/x-icon">
 
     <!-- css -->
     <link rel="stylesheet" href="../styles/reset.css">
@@ -14,8 +15,8 @@
     <link rel="stylesheet" href="../styles/modal.css">
 
     <!-- JAVA SCRIPT -->
-    <script src="../scripts/dashboard.js" defer></script>
-    <script src="../scripts/modal.js" defer></script>
+    <script type="module" src="../scripts/dashboard.js" defer></script>
+    <script type="module" src="../scripts/modal.js" defer></script>
 </head>
 
 <body>
@@ -72,13 +73,52 @@
         <div class="modal">
             <div class="headerModal">
                 <div class="profileInfo">
-                    <img class="userPost" src="" alt="">
+                    <img class="userPostModal" src="" alt="">
                     <p><strong class="nameUserPost"></strong></p>
                 </div>
                 <button class="closeModal closeModalAccessPub">X</button>
             </div>
             <h2 class="titleUserPost"></h2>
             <p class="contentUserPost"></p>
+        </div>
+    </dialog>
+
+    <dialog class="modal__controller modalEditPub">
+        <div class="modal">
+            <div class="headerModal">
+                <h3>Edição</h3>
+                <button class="closeModal closeModalEdit">X</button>
+            </div>
+            <div class="title__div divInput">
+                <label for="title">Título do post</label>
+                <input type="text" placeholder="Digite o título aqui..." id="title" class="titlePost editTitlePost">
+            </div>
+            <div class="content__div divInput">
+                <label for="content">Conteúdo do post</label>
+                <textarea id="content" class="contentPost editContentPost" placeholder="Desenvolva o conteúdo do post aqui..." cols="30"
+                    rows="10"></textarea>
+            </div>
+            <div class="buttons">
+                <button class="cancel cancelChange">Cancelar</button>
+                <button class="confirm__button saveChange">Salvar Alterações</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal__controller modalDeletePub">
+        <div class="modal modalDelete">
+            <div class="headerModal">
+                <h3>Confirmação de exclusão</h3>
+                <button class="closeModal closeModalDelete">X</button>
+            </div>
+            <div class="alert_delete">
+                <h2 class="titleUserPost">Tem certeza que deseja excluir este post?</h2>
+                <p class="contentUserPost">Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+            </div>
+            <div class="buttons">
+                <button class="delete__button cancelDelete">Cancelar</button>
+                <button class="alert__button delete">Excluir</button>
+            </div>
         </div>
     </dialog>
 

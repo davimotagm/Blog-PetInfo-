@@ -41,7 +41,7 @@ export const signIn = () => {
                     const userEmail = document.querySelector('.userEmail')
                     const userPassword = document.querySelector('.userPassword')
                     const divInputPassword = document.querySelector('.password')
-
+                    
                     userEmail.classList.add('alert');
                     userPassword.classList.add('alert');
 
